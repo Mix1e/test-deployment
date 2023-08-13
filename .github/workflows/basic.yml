@@ -1,0 +1,22 @@
+name: GitHubActions
+
+on: 
+  push: 
+    branches:
+      - master
+
+
+jobs:
+   testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: PrintHello
+      run: echo "Hello World"
+    
+   deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PrintHello
+        run: echo "Hello World from deploy"
